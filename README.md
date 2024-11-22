@@ -1,6 +1,5 @@
 # Aprendizaje-ThreeJS
 
----
 
 ## **Aprender Three.js Paso a Paso**  
 
