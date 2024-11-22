@@ -33,9 +33,6 @@ Crea una escena con:
 - Un cubo iluminado por una luz.  
 - Una cámara que lo observe desde un ángulo.
 
-#### **Recursos:**  
-- Tutorial inicial: [Primeros pasos con Three.js (Leonidas Esteban)](https://www.youtube.com/watch?v=8BOt1Rs29cw).  
-
 ---
 
 ### **2. Iluminación y sombras (2 semanas)**  
@@ -63,9 +60,6 @@ Dominar el sistema de iluminación de Three.js para darle realismo a tus escenas
 Crea una escena con:  
 - Un suelo que reciba sombras.  
 - Un objeto (como una esfera) que proyecte sombras desde una luz direccional.  
-
-#### **Recursos:**  
-- Documentación en español: [Luces y sombras en Three.js](https://desarrolloweb.com/articulos/luces-sombras-three-js.html).  
 
 ---
 
@@ -97,7 +91,6 @@ Crea un cubo con una textura de ladrillos. Usa:
 - Un mapa de desplazamiento para crear relieves reales.  
 
 #### **Recursos:**  
-- Tutorial de texturas: [Aprende texturas en Three.js (en español)](https://www.youtube.com/watch?v=aGEHgNfjR_o).  
 - Texturas gratis: [Poly Haven](https://polyhaven.com/textures).  
 
 ---
@@ -144,9 +137,6 @@ Añadir interactividad y realismo físico a tu simulador.
 
 #### **Ejercicio práctico:**  
 Crea un sistema donde un avión pueda chocar con montañas generadas aleatoriamente.  
-
-#### **Recursos:**  
-- Tutorial de físicas: [Cannon.js y Three.js (en español)](https://www.youtube.com/watch?v=7RAlZ1F3J1Q).  
 
 ---
 
