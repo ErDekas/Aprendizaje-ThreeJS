@@ -6,7 +6,6 @@ const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.inner
 const renderer = new THREE.WebGLRenderer();
 
 renderer.setSize( window.innerWidth, window.innerHeight );
-renderer.setClearColor( 0xffffff );
 document.body.appendChild( renderer.domElement );
 
 // Crear una fuente de luz
