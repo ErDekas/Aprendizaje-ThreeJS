@@ -1,161 +1,47 @@
-# Aprendizaje-ThreeJS
-
-
-## **Aprender Three.js Paso a Paso**  
-
-### **1. Configuración inicial y conceptos clave (1 semana)**  
-
-#### **Objetivo:**  
-Comprender cómo funciona Three.js desde la base. Configurar tu entorno y aprender los componentes esenciales.
-
-#### **Temas a estudiar:**  
-1. **Escena (`THREE.Scene`)**  
-   - Cómo crear una escena y qué papel desempeña.  
-   - Práctica: Crear una escena básica sin elementos visibles aún.  
-
-2. **Cámara (`THREE.PerspectiveCamera`)**  
-   - Diferencia entre cámaras de perspectiva y ortográficas.  
-   - Cómo configurar el `fov`, el `aspect ratio`, el `near` y el `far`.
-
-3. **Renderizador (`THREE.WebGLRenderer`)**  
-   - Qué es el renderizador y cómo usarlo para dibujar tu escena.  
-   - Configuración básica del canvas donde se renderizará.  
-   - Práctica: Renderizar un canvas vacío.
-
-4. **Geometrías, Materiales y Meshes**  
-   - Geometrías básicas (`BoxGeometry`, `SphereGeometry`, etc.).  
-   - Materiales básicos como `MeshBasicMaterial` y `MeshStandardMaterial`.  
-   - Combinar geometrías y materiales para crear objetos (`THREE.Mesh`).  
-
-#### **Ejercicio práctico:**  
-Crea una escena con:  
-- Un cubo iluminado por una luz.  
-- Una cámara que lo observe desde un ángulo.
+### **Nivel Básico: Familiarización con Three.js**
+1. **Cubo giratorio**: Crea un cubo que gire en sus tres ejes (X, Y, Z).
+2. **Sistema solar simplificado**: Crea una esfera para el sol y varias esferas para los planetas, que giren alrededor del sol.
+3. **Luces y sombras**: Añade una esfera y una luz puntual para explorar cómo funcionan las sombras.
+4. **Texturizar un objeto**: Aplica una textura a un cubo o esfera, como una imagen de ladrillos o hierba.
+5. **Control de cámara con ratón**: Usa OrbitControls para permitir que el usuario gire y acerque la cámara.
+6. **Esfera con gradiente**: Crea una esfera con un degradado de colores dinámico.
+7. **Cielo estrellado**: Usa puntos aleatorios para simular estrellas en un fondo negro.
+8. **Plano de agua ondulante**: Usa una geometría de plano y manipula los vértices para simular ondas.
+9. **Animación básica de objetos**: Haz que un cubo rebote arriba y abajo usando GSAP.
+10. **Interacción con clics**: Detecta clics en un cubo y cambia su color.
 
 ---
 
-### **2. Iluminación y sombras (2 semanas)**  
-
-#### **Objetivo:**  
-Dominar el sistema de iluminación de Three.js para darle realismo a tus escenas.
-
-#### **Temas a estudiar:**  
-1. **Luces básicas**  
-   - `AmbientLight`: Ilumina todo de manera uniforme.  
-   - `DirectionalLight`: Simula la luz del sol.  
-   - `PointLight`: Fuente de luz puntual (como una bombilla).  
-   - `SpotLight`: Luz en forma de cono (como un foco).  
-
-2. **Sombras**  
-   - Habilitar sombras en el renderizador (`renderer.shadowMap.enabled = true`).  
-   - Configurar objetos que proyecten y reciban sombras (`castShadow` y `receiveShadow`).  
-   - Práctica: Añadir un plano y una luz direccional para ver cómo se proyectan sombras.  
-
-3. **Luces avanzadas**  
-   - `HemisphereLight`: Luz ambiental que combina tonos.  
-   - `RectAreaLight`: Luz rectangular para efectos realistas.  
-
-#### **Ejercicio práctico:**  
-Crea una escena con:  
-- Un suelo que reciba sombras.  
-- Un objeto (como una esfera) que proyecte sombras desde una luz direccional.  
+### **Nivel Intermedio: Creación de Escenas y Experiencias**
+11. **Carrousel 3D**: Crea un carrusel de objetos que giren alrededor de un punto central.
+12. **Modelo cargado (GLTF)**: Importa un modelo 3D (por ejemplo, una silla) y añádelo a tu escena.
+13. **Simulación de partículas**: Crea un sistema de partículas como lluvia o nieve.
+14. **Cubo de Rubik básico**: Crea un cubo de Rubik estático con colores en cada cara.
+15. **Escena de ciudad**: Diseña edificios básicos con formas geométricas y añade luces como farolas.
+16. **Reflejos en un espejo**: Usa un plano reflectante para simular un espejo.
+17. **Portal 3D**: Crea dos planos que actúen como portales para ver entre ellos.
+18. **Texto 3D**: Renderiza texto 3D usando `THREE.TextGeometry`.
+19. **Simulación de fuego**: Usa partículas y shaders para crear un efecto de fuego realista.
+20. **Explorador de planetas**: Haz que la cámara viaje entre planetas con interacciones del usuario.
 
 ---
 
-### **3. Texturas y materiales avanzados (3 semanas)**  
-
-#### **Objetivo:**  
-Aprender a usar texturas y materiales avanzados para darle detalle y realismo a tus objetos.
-
-#### **Temas a estudiar:**  
-1. **Carga de texturas**  
-   - Uso de `TextureLoader` para cargar imágenes.  
-   - Mapeado UV (cómo las texturas se colocan sobre geometrías).  
-
-2. **Tipos de texturas**  
-   - **Mapas difusos**: Color básico de una superficie.  
-   - **Mapas normales**: Para simular detalles sin modificar la geometría.  
-   - **Mapas de desplazamiento**: Deforman físicamente la geometría.  
-   - **Mapas especulares y de reflexión**: Para efectos brillantes y metálicos.  
-
-3. **Materiales avanzados**  
-   - `MeshStandardMaterial`: Compatible con luces y físicas avanzadas.  
-   - `MeshPhysicalMaterial`: Más opciones para efectos realistas.  
-   - Materiales personalizados con shaders.
-
-#### **Ejercicio práctico:**  
-Crea un cubo con una textura de ladrillos. Usa:  
-- Un mapa difuso para el color.  
-- Un mapa normal para simular la textura rugosa.  
-- Un mapa de desplazamiento para crear relieves reales.  
-
-#### **Recursos:**  
-- Texturas gratis: [Poly Haven](https://polyhaven.com/textures).  
+### **Nivel Avanzado: Experiencias Interactivas y Complejas**
+21. **Juego simple (Pong)**: Crea un mini juego de Pong con una pelota y dos palas.
+22. **Simulación de fluidos**: Usa física para simular líquidos en movimiento (inicia con algo simple).
+23. **Visualizador de música**: Haz que un objeto cambie de forma según el ritmo de una canción.
+24. **Configurador 3D de muebles**: Permite al usuario mover y rotar modelos de muebles en un entorno 3D.
+25. **Generador de terrenos**: Usa Perlin Noise para crear un terreno montañoso.
+26. **Viaje en el espacio**: Crea una nave que pueda moverse a través de un entorno de estrellas y planetas.
+27. **Galería de arte 3D**: Diseña un espacio tipo museo para mostrar imágenes o modelos.
+28. **Clon de Minecraft básico**: Crea un mundo voxel donde puedas añadir o eliminar bloques.
+29. **Shader personalizado**: Escribe un shader GLSL para efectos avanzados como distorsión o hologramas.
+30. **Realidad Virtual con WebXR**: Usa WebXR para crear una experiencia inmersiva compatible con gafas de VR.
 
 ---
 
-### **4. Modelos 3D y animaciones (4 semanas)**  
-
-#### **Objetivo:**  
-Cargar modelos complejos y darles movimiento.
-
-#### **Temas a estudiar:**  
-1. **Carga de modelos 3D**  
-   - Uso de `GLTFLoader` para cargar modelos `.glb` o `.gltf`.  
-   - Cómo integrar modelos de Sketchfab o Blender en tu proyecto.  
-
-2. **Animaciones**  
-   - Animar objetos simples (como un cubo girando) con el `Clock` de Three.js.  
-   - Animar modelos 3D usando sus esqueletos (`SkeletonHelper`).  
-   - Uso de librerías externas como GSAP para transiciones fluidas.  
-
-#### **Ejercicio práctico:**  
-Carga un modelo de avión desde Sketchfab.  
-- Añade una animación para que el avión gire sobre su eje.  
-- Mueve la cámara para seguir al avión mientras vuela.  
-
-#### **Recursos:**  
-- Tutorial: [Cargar modelos en Three.js](https://threejs.org/examples/#webgl_loader_gltf).  
-- Librería GSAP: [Documentación de GSAP](https://greensock.com/gsap/).  
-
----
-
-### **5. Física y detección de colisiones (2-3 semanas)**  
-
-#### **Objetivo:**  
-Añadir interactividad y realismo físico a tu simulador.
-
-#### **Temas a estudiar:**  
-1. **Raycaster**  
-   - Uso del `Raycaster` para detectar clics y colisiones.  
-   - Ejemplo: Detectar si un avión choca con otro objeto.  
-
-2. **Integración con librerías de físicas**  
-   - Usa `Cannon.js` o `Ammo.js` para añadir físicas avanzadas (gravedad, colisiones realistas, etc.).  
-   - Simula el movimiento de un avión con físicas básicas.  
-
-#### **Ejercicio práctico:**  
-Crea un sistema donde un avión pueda chocar con montañas generadas aleatoriamente.  
-
----
-
-### **6. Proyecto final: Simulador de Vuelo (duración flexible)**  
-
-#### **Objetivo:**  
-Aplicar todo lo aprendido en un proyecto funcional.  
-
-1. **Estructura del proyecto**  
-   - Crear un sistema de cámaras: vista desde la cabina y vista externa.  
-   - Integrar texturas para cielo y nubes (usa un `Skybox`).  
-
-2. **Interactividad**  
-   - Controles de teclado y ratón para mover el avión.  
-   - Detección de colisiones y animaciones de respuesta (como un efecto de choque).  
-
-3. **Detalles adicionales**  
-   - Agrega partículas para simular efectos como humo o fuego.  
-   - Optimiza el rendimiento con frustum culling.  
-
-#### **Recursos recomendados:**  
-- [Curso completo de Three.js Journey](https://threejs-journey.com/) (si quieres invertir en aprendizaje).  
-- Texturas para cielo: [Poly Haven Skybox](https://polyhaven.com/hdris).
+### **Consejos para Aprender y Avanzar**
+- **Explora la documentación**: La [documentación oficial de Three.js](https://threejs.org/docs/) tiene ejemplos básicos que puedes modificar.
+- **Usa herramientas externas**: Herramientas como [Blender](https://www.blender.org/) para crear modelos o [Mixamo](https://www.mixamo.com/) para animaciones pueden complementar tus proyectos.
+- **Aprende sobre WebGL**: Profundizar en WebGL y shaders personalizados te dará una ventaja en proyectos avanzados.
+- **Explora GitHub**: Busca repositorios de proyectos Three.js para aprender de ejemplos reales.
